@@ -5,7 +5,7 @@
 
 ## Hasil
 1. Terinstal Docker dan Dbeaver
-2. Terinstal dan berhasil bikin [diagram di JGraph](./pertemuan-1/Contoh Diagram.draoio), serta tersimpan di GitHub
+2. Terinstal dan berhasil bikin [diagram di JGraph](./pertemuan-1/Contoh%Diagram.draoio), serta tersimpan di GitHub
 
 ## Kendala
 - Docker Toolbox
