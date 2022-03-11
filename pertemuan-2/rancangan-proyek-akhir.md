@@ -4,13 +4,16 @@ Sebuah aplikasi yang bertujukan untuk mengelola sistem RT di daerah Bandung, Sek
 ## Fitur
   1. Pendataan warga dan staff kepengurusan
   2. Menambah keluhan dari warga
-  3. Menambah berita dari warga(dengan perizinan admin) dan staff kepengurusan
+  3. Menambah berita dari warga(dengan persetujuan admin) dan staff kepengurusan
 
 ## Entitas dan Instansi
   1. Warga (Bu Ade, Pa Ade)
   2. Staff (Ketua RT, Sekretaris, Bendahara, Seksi Pemuda)
   3. Keluhan (Keluhan lampu gang yang mati, Keluhan warga yang berkelahi)
   4. Berita (Berita pembagian zakat, Berita pembagian bantuan, Berita acara futsal)
+
+## Diagram
+![image](https://user-images.githubusercontent.com/46425489/157783092-98e9d360-90c7-46fa-9bd0-c2d2e4db1e97.png)
 
 ## Atribut
   1. Warga (id_warga, no_hp_warga, nama_warga, alamat_warga, status_ekonomi, status_keaktifan, jenis_kelamin)
