@@ -4,4 +4,4 @@ Sekumpulan acara dan events yang wajib diikuti ketika saya masih berada di bangk
 
 ## Kumpulan Sertifikat
 
-![ANDC CERTIFICATE](https://user-images.githubusercontent.com/46425489/158855498-35b248f0-59ae-41b3-ae04-f3db2292f322.jpg)
+[ANDC CERTIFICATE.pdf](https://github.com/nugrahaas/IF214002/files/8288372/ANDC.CERTIFICATE.pdf)
