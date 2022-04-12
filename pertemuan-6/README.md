@@ -17,7 +17,7 @@ Tabel-tabel berikut merupakan tabel yang isian datanya(dummies) sudah dinormalis
 
 #### Tabel Berita
 |🔑id_berita|nama_warga|no_hp_warga|judul_berita|deskripsi_berita|jenis_berita|status_publikasi_berita|
-|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 |1|Mustafa Losail|085645671111|Komika Berinisial Marshel Tercyduck Membeli Produk dari Dea|blablabla|Hiburan, Kriminal|Disetujui|
 |2|Ucup Mandalika|085899881212|Pertamax dan Minyak Naik!!|blablabla|Politik|Menunggu Persetujuan|
 |3|Nunung Sachsenring|089699881212|Kupas Tuntas Cara Pemerintah Mengalihkan Isu yang Beredar dengan Isu Personal|blablabla|Politik|Ditolak|
