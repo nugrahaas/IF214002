@@ -9,4 +9,4 @@ Kita digebrak penuh gebrakan semangat dengan on-cam dan tuntutan penyelesaian tu
 
 ## Diagram
 
-![Revisi Logical ERD drawio (2)](https://user-images.githubusercontent.com/46425489/161192714-6304ef61-381e-4137-85c1-6b30892432ad.png)
+![Revisi Logical ERD drawio (3)](https://user-images.githubusercontent.com/46425489/162954746-47d9cd13-dacd-466e-b8ee-60fb88195ac2.png)
