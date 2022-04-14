@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T01:14:38.994Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="wiTwSXMmwGYmKxW5-kv8" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-14T01:57:09.237Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="RM8M_qfzrBHb1ckPjAYi" version="17.4.0" type="github">
   <diagram id="17nobbx37QiBZ-G4ytO7" name="Page-1">
-    <mxGraphModel dx="1231" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1231" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,7 +28,7 @@
             <mxRectangle width="30" height="250" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-7" value="no_hp char (20) NOT NULL&#xa;&#xa;nama_karyawan char (50) NOT NULL&#xa;&#xa;email char (50) NOT NULL&#xa;&#xa;jenis_kelamin enum NOT NULL&#xa;&#xa;umur int NOT NULL&#xa;&#xa;lama_bekerja int NOT NULL&#xa;&#xa;id_gaji int NOT NULL&#xa;&#xa;id_karyawan int NOT NULL&#xa;&#xa;id_tempat_tinggal int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontStyle=0" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-5">
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-7" value="no_hp char (20) NOT NULL&#xa;&#xa;nama_karyawan char (50) NOT NULL&#xa;&#xa;email char (50) NOT NULL&#xa;&#xa;jenis_kelamin enum NOT NULL&#xa;&#xa;umur int NOT NULL&#xa;&#xa;lama_bekerja int NOT NULL&#xa;&#xa;id_gaji int NOT NULL&#xa;&#xa;id_jabatan int NOT NULL&#xa;&#xa;id_tempat_tinggal int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontStyle=0" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-5">
           <mxGeometry x="30" width="230" height="250" as="geometry">
             <mxRectangle width="230" height="250" as="alternateBounds" />
           </mxGeometry>
@@ -136,6 +136,111 @@
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="480" y="490" as="sourcePoint" />
             <mxPoint x="580" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-42" value="Historis Gaji" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="40" width="260" height="160.00000000000023" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-43" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-42">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-44" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-43">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-45" value="id_historis_gaji int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-43">
+          <mxGeometry x="30" width="230" height="30" as="geometry">
+            <mxRectangle width="230" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-46" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-42">
+          <mxGeometry y="60" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-47" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-46">
+          <mxGeometry width="30" height="100" as="geometry">
+            <mxRectangle width="30" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-48" value="jumlah_gaji_total int NOT NULL&#xa;&#xa;tanggal date NOT NULL&#xa;&#xa;id_gaji int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontStyle=0" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-46">
+          <mxGeometry x="30" width="230" height="100" as="geometry">
+            <mxRectangle width="230" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-49" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-EyaEsuJnF6qJAcYI2HZ-18" target="-EyaEsuJnF6qJAcYI2HZ-46">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="380" y="470" as="sourcePoint" />
+            <mxPoint x="480" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-50" value="Historis Jabatan" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="260" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-51" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-50">
+          <mxGeometry y="30" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-52" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-51">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-53" value="id_historis_jabatan int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-51">
+          <mxGeometry x="30" width="290" height="30" as="geometry">
+            <mxRectangle width="290" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-54" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-50">
+          <mxGeometry y="60" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-55" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-54">
+          <mxGeometry width="30" height="140" as="geometry">
+            <mxRectangle width="30" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-56" value="mantan_divisi enum NOT NULL&#xa;&#xa;mantan_level enum NOT NULL&#xa;&#xa;mantan_nama_jabatan char(20) NOT NULL&#xa;&#xa;tanggal date NOT NULL&#xa;&#xa;id_jabatan int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontStyle=0" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-54">
+          <mxGeometry x="30" width="290" height="140" as="geometry">
+            <mxRectangle width="290" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-57" value="Historis Tempat Tinggal" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="505" width="258" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-58" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-57">
+          <mxGeometry y="30" width="258" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-59" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-58">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-60" value="id_historis_tempat_tinggal int NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-58">
+          <mxGeometry x="30" width="228" height="30" as="geometry">
+            <mxRectangle width="228" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-61" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-57">
+          <mxGeometry y="60" width="258" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-62" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-61">
+          <mxGeometry width="30" height="155" as="geometry">
+            <mxRectangle width="30" height="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-63" value="alamat_sebelumnya char(40) NOT NULL&#xa;&#xa;jarak double NOT NULL&#xa;&#xa;kategori enum NOT NULL&#xa;&#xa;tanggal date NOT NULL&#xa;&#xa;id_tempat_tinggal int NOT NULL&#xa;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontStyle=0" vertex="1" parent="-EyaEsuJnF6qJAcYI2HZ-61">
+          <mxGeometry x="30" width="228" height="155" as="geometry">
+            <mxRectangle width="228" height="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-64" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1" source="-EyaEsuJnF6qJAcYI2HZ-25" target="-EyaEsuJnF6qJAcYI2HZ-54">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="540" y="400" as="sourcePoint" />
+            <mxPoint x="640" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-EyaEsuJnF6qJAcYI2HZ-65" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1" source="-EyaEsuJnF6qJAcYI2HZ-32" target="-EyaEsuJnF6qJAcYI2HZ-61">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="540" y="400" as="sourcePoint" />
+            <mxPoint x="640" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
