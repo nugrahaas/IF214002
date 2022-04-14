@@ -30,7 +30,7 @@ CREATE TABLE
 
 - ERD :
 
-![ERD_Quiz_Karyawan drawio (2)](https://user-images.githubusercontent.com/46425489/163296695-2543cb47-24ce-4765-9307-4ce6bb0dc148.png)
+![ERD_Quiz_Karyawan drawio (4)](https://user-images.githubusercontent.com/46425489/163298874-f453363d-c65a-49b8-96db-3f7312430143.png)
 
 - SQL : (saya menggunakan phpmyadmin dan SQLyog)
 
