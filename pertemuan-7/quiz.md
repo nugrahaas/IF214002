@@ -26,9 +26,12 @@ CREATE TABLE
 - Jumlah Huruf yang pernah saya ketik seumur hidup per hari
 - Jumlah Sertifikat yang saya dapat per bulan
 
-2. ERD :
-![ERD_Quiz_Karyawan drawio (1)](https://user-images.githubusercontent.com/46425489/163296025-5b120b77-d93f-41f2-bb88-4ab9035a00bc.png)
+2. 
 
+- ERD :
 
+![ERD_Quiz_Karyawan drawio (2)](https://user-images.githubusercontent.com/46425489/163296695-2543cb47-24ce-4765-9307-4ce6bb0dc148.png)
 
+- SQL : (saya menggunakan phpmyadmin dan SQLyog)
 
+![image](https://user-images.githubusercontent.com/46425489/163298606-761072a9-90df-4674-b4dc-7ff846039891.png)
