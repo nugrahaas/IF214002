@@ -35,3 +35,8 @@ CREATE TABLE
 - SQL : (saya menggunakan phpmyadmin dan SQLyog)
 
 ![image](https://user-images.githubusercontent.com/46425489/163298606-761072a9-90df-4674-b4dc-7ff846039891.png)
+
+Bukti Jam :
+
+![image](https://user-images.githubusercontent.com/46425489/163298995-268407b8-82de-41c0-8517-16a812a20792.png)
+
