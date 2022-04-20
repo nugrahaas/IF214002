@@ -1,6 +1,6 @@
 # Amazon Web Service Developer Coaching
 
-Sebuah pelatihan kontinu dari dicoding.com dan saya ikut pelatihan Back-End : Layanan Jaringan di AWS ini.
+Sebuah pelatihan kontinu dari dicoding.com dan saya ikut pelatihan Back-End : Layanan Jaringan di AWS seri kali ini yang dibawakan oleh Fikri Helmi Setiawan.
 
 ## Materi :
 - Virtual Network dengan Amazon VPC
