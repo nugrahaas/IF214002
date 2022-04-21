@@ -55,6 +55,7 @@ Saat ini masyarakat bingung untuk bagaimana caranya berkomunikasi. Aplikasi berj
   8. RW (RW. 08, RW. 01, RW. 03)
   9. RT (RT. 08, RT. 01, RT. 03)
   10. KK (Kartu Keluarga)
+  11. Admin (Lingkup RT, RW, Kelurahan)
 
 ### Diagram
 
@@ -65,3 +66,10 @@ Saat ini masyarakat bingung untuk bagaimana caranya berkomunikasi. Aplikasi berj
   2. Role (id_role, nama_role)
   3. Keluhan (id_keluhan, nama_warga, no_hp_warga, judul_keluhan, deksripsi_keluhan, jenis_keluhan, status_keluhan)
   4. Berita (id_berita, nama_warga, no_hp_warga, judul_berita, deksripsi_berita, jenis_berita, status_berita)
+  5. Admin (id_admin, no_hp_admin, username_admin, pass_admin, nama_admin, alamat_admin, jenis_kelamin)
+  6. Kota (id_kota, nama_kota, nama_provinsi, jumlah_kecamatan)
+  7. Kecamatan (id_kecamatan, nama_kecamatan, jumlah_keldes)
+  8. Keldes (id_keldes, nama_keldes, jumlah_rw)
+  9. RW (id_rw, nama_rw, jumlah_rt)
+  10. Kota (id_rw, nama_rt, jumlah_kk)
+  11. KK (id_kk, nama_kepala_keluarga, jumlah_anggota_keluarga, nama_rt, nama_rw, nama_keldes, nama_kecamatan, nama_kota, nama_provinsi)
