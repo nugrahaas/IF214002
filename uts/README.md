@@ -59,7 +59,13 @@ Saat ini masyarakat bingung untuk bagaimana caranya berkomunikasi. Aplikasi berj
 
 ### Diagram
 
+ERD Chen
 
+![pertemuan2 drawio](https://user-images.githubusercontent.com/46425489/164358263-7ed4ca77-7b2b-4510-a6df-a8f089c5aceb.png)
+
+ERD Crow's Foot
+
+![Revisi Logical ERD drawio (4)](https://user-images.githubusercontent.com/46425489/164358500-568bc50b-6cbb-4d78-bcf4-26f7c8e32b81.png)
 
 ### Atribut
   1. Warga (id_warga, no_hp_warga, pass_warga, nama_warga, alamat_warga, status_ekonomi, status_keaktifan, jenis_kelamin)
