@@ -82,6 +82,31 @@ ERD Crow's Foot
 
 ### Normalisasi Data
 
+#### Tabel Admin
+|🔑id_admin|nama_admin|no_hp_admin|pass_admin|alamat_admin|status_keaktifan|status_ekonomi|
+|---|---|---|---|---|---|---|
+|1|Ujang Motegi|087745671111|ujangnihbous|Bojongloa Kidul|Aktif|Menengah|
+|2|Toton Mandalika|087899881212|totonnihbous|Bandung Kidul|Aktif|Rendah|
+|3|Asep Aragon|087899881212|asepnihbous|Antapani|Aktif|Tinggi|
+
+#### Tabel Warga
+|🔑id_warga|nama_warga|no_hp_warga|pass_warga|alamat_warga|status_keaktifan|status_ekonomi|jenis_kelamin|role|
+|---|---|---|---|---|---|---|---|---|
+|1|Mustafa Losail|085645671111|mustafasikece|Bandung Kidul|Aktif|Menengah|Pria|Ketua RT|
+|2|Ucup Mandalika|085899881212|ucupsikece|Bandung Kidul|Aktif|Rendah|Pria|Warga|
+|3|Nunung Sachsenring|089699881212|nunungpanggeulisna|Bandung Kidul|Aktif|Tinggi|Wanita|Warga|
+
+#### Tabel Berita
+|🔑id_berita|nama_warga|no_hp_warga|judul_berita|deskripsi_berita|jenis_berita|status_publikasi_berita|
+|---|---|---|---|---|---|---|
+|1|Mustafa Losail|085645671111|Komika Berinisial Marshel Tercyduck Membeli Produk dari Dea|blablabla|Hiburan, Kriminal|Disetujui|
+|2|Ucup Mandalika|085899881212|Pertamax dan Minyak Naik!!|blablabla|Politik|Menunggu Persetujuan|
+|3|Nunung Sachsenring|089699881212|Kupas Tuntas Cara Pemerintah Mengalihkan Isu yang Beredar dengan Isu Personal|blablabla|Politik|Ditolak|
+
+#### Tabel Keluhan
+|🔑id_keluhan|nama_warga|no_hp_warga|judul_keluhan|deskripsi_keluhan|jenis_keluhan|status_keluhan|
+|---|---|---|---|---|---|---|
+|1|Mustafa Losail|085645671111|Warga Tidak Mau Mengikuti Kerja Bakti|Jadi Saya Beberesih Sendiri:(|Sosial|Ditinjau|
 |2|Ucup Mandalika|085899881212|aya nu gelut kamari pak|si burhan lawan si maman, untung we saya masang si burhan|Sosial|Ditindak Lanjuti|
 |3|Nunung Sachsenring|089699881212|Apakah Tidak Ada Bantuan untuk Minyak Goreng??|Minyak lagi naik nih pak|Ekonomi|Selesai|
 
