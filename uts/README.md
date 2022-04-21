@@ -6,10 +6,9 @@
 2. Jelaskan bagaimana cara mentransformasikan proses bisnis sebuah organisasi menjadi struktur data di basis data !
 3. Rancang solusi digital dari satu permasalahan yang ada di sekitar Anda. 
 
-A. Deskripsikan solusi digital tersebut dalam satu paragraf
+- Deskripsikan solusi digital tersebut dalam satu paragraf
+- Buat list fitur-fitur yang ada pada solusi digital tersebut
+- Buat ERD notasi Chen dari struktur data yang mewakili fitur2 di solusi digital tersebut
+- Buat ERD notasi Crow Foot dari struktur data logical yang mewakili fitur2 di solusi digital tersebut, lengkap dengan keys, tipe data, dan normalisasi hingga bentuk ke 3
 
-B. Buat list fitur-fitur yang ada pada solusi digital tersebut
 
-C. Buat ERD notasi Chen dari struktur data yang mewakili fitur2 di solusi digital tersebut
-
-D. Buat ERD notasi Crow Foot dari struktur data logical yang mewakili fitur2 di solusi digital tersebut, lengkap dengan keys, tipe data, dan normalisasi hingga bentuk ke 3
