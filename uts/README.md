@@ -65,7 +65,7 @@ ERD Chen
 
 ERD Crow's Foot
 
-![Revisi Logical ERD drawio (4)](https://user-images.githubusercontent.com/46425489/164358500-568bc50b-6cbb-4d78-bcf4-26f7c8e32b81.png)
+![Revisi Logical ERD drawio (5)](https://user-images.githubusercontent.com/46425489/164373335-5d9bb81f-6df2-4bd5-9b14-169a57dc0dda.png)
 
 ### Atribut
   1. Warga (id_warga, no_hp_warga, pass_warga, nama_warga, alamat_warga, status_ekonomi, status_keaktifan, jenis_kelamin)
