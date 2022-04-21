@@ -79,3 +79,58 @@ ERD Crow's Foot
   9. RW (id_rw, nama_rw, jumlah_rt)
   10. Kota (id_rw, nama_rt, jumlah_kk)
   11. KK (id_kk, nama_kepala_keluarga, jumlah_anggota_keluarga, nama_rt, nama_rw, nama_keldes, nama_kecamatan, nama_kota, nama_provinsi)
+
+### Normalisasi Data
+
+|2|Ucup Mandalika|085899881212|aya nu gelut kamari pak|si burhan lawan si maman, untung we saya masang si burhan|Sosial|Ditindak Lanjuti|
+|3|Nunung Sachsenring|089699881212|Apakah Tidak Ada Bantuan untuk Minyak Goreng??|Minyak lagi naik nih pak|Ekonomi|Selesai|
+
+#### Tabel Role
+|🔑id_role|nama_role|deskripsi_role|
+|---|---|---|
+|1|Ketua RT|Wilayah Lingkungan RT|
+|2|Ketua RW|Wilayah Lingkungan RW|
+|3|Sekretaris RT|Wilayah Lingkungan RT|
+
+#### Tabel Kota
+|🔑id_kota|nama_kota|jumlah_kecamatan|
+|---|---|---|
+|1|Kota Bandung|30|
+|2|Kota Sumedang|26|
+|3|Kabupaten Garut|42|
+
+#### Tabel Kecamatan
+|🔑id_kecamatan|nama_kecamatan|jumlah_keldes|
+|---|---|---|
+|1|Kecamatan Andir|6|
+|2|Kecamatan Antapani|4|
+|3|Kecamatan Arcamanik|4|
+
+#### Tabel Keldes
+|🔑id_keldes|nama_keldes|jumlah_rw|
+|---|---|---|
+|1|Kelurahan Ciroyom|10|
+|2|Kelurahan Cempaka|7|
+|3|Kelurahan Maleber|11|
+|4|Kelurahan Batununggal|12|
+
+#### Tabel RW
+|🔑id_rw|nama_rw|jumlah_rt|id_keldes|
+|---|---|---|---|
+|1|RW. 08|6|4|
+|2|RW. 01|8|4|
+|3|RW. 02|5|4|
+
+#### Tabel RT
+|🔑id_rt|nama_rt|jumlah_kk|id_rw|
+|---|---|---|---|
+|1|RT. 01|56|1|
+|2|RT. 04|27|1|
+|3|RT. 05|85|1|
+
+#### Tabel KK
+|🔑id_kk|nama_kepala_keluarga|jumlah_anggota_keluarga
+|---|---|---|
+|1|Mustafa Losail|3|
+|2|Toton Mandalika|4|
+|3|Asep Aragon|2|
