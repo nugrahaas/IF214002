@@ -11,4 +11,4 @@
 - Buat ERD notasi Chen dari struktur data yang mewakili fitur2 di solusi digital tersebut
 - Buat ERD notasi Crow Foot dari struktur data logical yang mewakili fitur2 di solusi digital tersebut, lengkap dengan keys, tipe data, dan normalisasi hingga bentuk ke 3
 
-
+<b>Jawaban</b>
