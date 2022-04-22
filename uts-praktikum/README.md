@@ -3,7 +3,7 @@
 
 ## Gambar
 
-![image](https://user-images.githubusercontent.com/46425489/164576576-6259dfaf-5f7b-43a5-866e-f1b44d1fd04f.png)
+![image](https://user-images.githubusercontent.com/46425489/164577952-513f8747-1626-4728-acba-edd422041776.png)
 
 ## SQL
 
@@ -183,8 +183,10 @@ ALTER TABLE `keldes`
 
 
 ALTER TABLE `keluhan`
-  ADD PRIMARY KEY (`id_keluhan`);
-
+  ADD PRIMARY KEY (`id_keluhan`),
+  ADD KEY `id_admin` (`id_admin`),
+  ADD KEY `id_warga` (`id_warga`);
+  
 
 ALTER TABLE `kk`
   ADD PRIMARY KEY (`id_kk`),
@@ -270,6 +272,11 @@ ALTER TABLE `kecamatan`
 
 ALTER TABLE `keldes`
   ADD CONSTRAINT `keldes_ibfk_1` FOREIGN KEY (`id_kecamatan`) REFERENCES `kecamatan` (`id_kecamatan`);
+
+
+ALTER TABLE `keluhan`
+  ADD CONSTRAINT `keluhan_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id_admin`),
+  ADD CONSTRAINT `keluhan_ibfk_2` FOREIGN KEY (`id_warga`) REFERENCES `warga` (`id_warga`);
 
 
 ALTER TABLE `kk`
