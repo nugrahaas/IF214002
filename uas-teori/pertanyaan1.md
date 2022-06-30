@@ -15,16 +15,16 @@ Kelas : Teknik Informatika E
 
 1. Sebuah aplikasi yang bertujukan untuk mengelola sistem RT di daerah Bandung, Sekelimus.
 
-3. Fitur :
+2. Fitur :
 - Pendataan warga dan staff kepengurusan
 - Menambah keluhan dari warga
 - Menambah berita dari warga(dengan persetujuan admin) dan staff kepengurusan
 
-4. ERD :
+3. ERD :
 
 ![image](https://user-images.githubusercontent.com/46425489/176569572-8236bc57-5abf-418c-b667-ff06f2c791d3.png)
 
-5. DDL
+4. DDL
 
 ```sql
 
