@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aplikasi Kependudukan - Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Manggil library javascript eksternal untuk layout auto keren, Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Manggil library javascript eksternal untuk http client -->
+	  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <nav id="menus" class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+      <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/webapp/visualizationData.php">VisDat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/webapp/penduduk-list.html">Operasional</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="content">
+      <div class="row mb-4">
+        <div class="col-sm-12">
+          <h1>Operasional</h1>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 g-2 g-md-3">
+        <div class="col">
+          <div class="shadow-sm p-3">
+            <h3>Tambah Data Penduduk</h3>
+            <div class="row g-2">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="text" class="form-control" placeholder="Nama lengkap" id="input-nama-warga">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="number" class="form-control" placeholder="NIK" id="input-nik-warga">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="text" class="form-control" placeholder="Telepon" id="input-no-hp-warga">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="password" class="form-control" placeholder="Password" id="input-pass-warga">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input id="input-tanggal-lahir" type="date" class="form-control" placeholder="Tanggal lahir">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="text" class="form-control" placeholder="Alamat" id="input-alamat-warga">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                Gender <input class="form-check-input" value="Pria" type="radio" name="input-jenis-kelamin"> Pria <input class="form-check-input" type="radio" value="Wanita" name="input-jenis-kelamin"> Wanita
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <select class="form-select" id="input-status-keaktifan">
+                  <option selected>Keaktifan</option>
+                  <option value="Aktif Domisili">Aktif Domisili</option>
+                  <option value="Nonaktif Domisili">Nonaktif Domisili</option>
+                  <option value="Aktif Non Domisili">Aktif Non Domisili</option>
+                  <option value="Tidak Terdaftar">Tidak Terdaftar</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <select class="form-select" id="input-status-ekonomi">
+                  <option selected>Ekonomi</option>
+                  <option value="Rendah">Rendah</option>
+                  <option value="Menengah">Menengah</option>
+                  <option value="Tinggi">Tinggi</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <select class="form-select" id="input-id-role">
+                  <option selected>Role</option>
+                  <option value="1">Walikota</option>
+                  <option value="2">Camat</option>
+                  <option value="3">Lurah</option>
+                  <option value="4">Ketua RW</option>
+                  <option value="5">Ketua RT</option>
+                  <option value="22">Warga</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <select class="form-select" id="input-id-kk">
+                  <option selected>KK</option>
+                  <option value="3273129109128790">3273129109128790</option>
+                  <option value="3273191209128321">3273191209128321</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <button onclick="tambahPenduduk()" type="button" class="btn btn-primary w-100">Tambah</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="shadow-sm p-3">
+            <h3>Data Penduduk</h3>
+            <div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">NIK</th>
+                    <th scope="col">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="data-penduduk-tbody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <script>
+      function tambahPenduduk() {
+        const isianData = {};
+        isianData.nama_warga = document.getElementById('input-nama-warga').value; 
+        isianData.nik_warga = parseInt(document.getElementById('input-nik-warga').value); 
+        isianData.no_hp_warga = document.getElementById('input-no-hp-warga').value;
+        isianData.pass_warga = document.getElementById('input-pass-warga').value;
+        isianData.tanggal_lahir = document.getElementById('input-tanggal-lahir').value;
+        isianData.alamat_warga = document.getElementById('input-alamat-warga').value;
+        isianData.jenis_kelamin = document.querySelector('input[name="input-jenis-kelamin"]:checked').value;
+        isianData.status_keaktifan = document.getElementById('input-status-keaktifan').value;
+        isianData.status_ekonomi = document.getElementById('input-status-ekonomi').value;
+        isianData.id_role = parseInt(document.getElementById('input-id-role').value);
+        isianData.id_kk = parseInt(document.getElementById('input-id-kk').value);
+
+        const alamatWebService = `http://localhost:8000/api/index.php/penduduk`;
+        axios.post(alamatWebService, isianData)
+          .then(function (dataDariWebServiceNihGuys){
+            console.log(dataDariWebServiceNihGuys.data["data"]);
+            alert(`Data ${isianData.nama_warga} berhasil ditambahkan`);
+            tampilkanSemuaPenduduk();
+          })
+        console.log(isianData);
+      }
+
+      function hapusPenduduk(idPenduduk, namaPenduduk) {
+        console.log("hapus penduduk");
+        const alamatWebService = `http://localhost:8000/api/index.php/penduduk/${idPenduduk}`;
+
+        axios.delete(alamatWebService)
+          .then(function (dataDariWebServiceNihGuys){
+            console.log(dataDariWebServiceNihGuys.data["data"]);
+            alert(`Data ${namaPenduduk} berhasil dihapus`);
+            tampilkanSemuaPenduduk();
+          })
+      }
+
+      function tampilkanSemuaPenduduk() {
+
+        const alamatWebService = "http://localhost:8000/api/index.php/penduduk";
+
+        axios.get(alamatWebService)
+          .then(function (dataDariWebServiceNihGuys){
+            console.log(dataDariWebServiceNihGuys.data["data"]);
+
+            let listPenduduk = document.getElementById("data-penduduk-tbody");
+            let listPendudukHTMLString = "";
+
+            dataDariWebServiceNihGuys.data["data"].forEach(item => {
+              listPendudukHTMLString += `
+                <tr>
+                  <td>${item.nama_warga}</td>
+                  <td>${item.nik_warga}</td>
+                  <td>
+                    <button onclick="hapusPenduduk(${item.id_warga}, '${item.nama_warga}')" type="button" class="btn btn-danger btn-sm">Hapus</button>
+                  </td>
+                </tr>
+              `;
+
+            })
+
+            listPenduduk.innerHTML = listPendudukHTMLString;
+          });
+      }
+
+      tampilkanSemuaPenduduk();
+    </script>
+  </body>
+</html>
